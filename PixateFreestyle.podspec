@@ -28,8 +28,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = true
   s.source   =  { :git => "https://github.com/Pixate/pixate-freestyle-ios.git" }
-  s.source_files = 'src/*.{h,m,c}', 'src/**/*.{h,m,c}'
-  s.exclude_files = 'src/**/*Tests.{h,m,c}'
+  s.source_files = 'src/*.{h,m,c}', 'src/{Core,Framework,Kernel,Modules}/**/*.{h,m,c}'
 #  s.prefix_header_file = "src/pixate-freestyle-Prefix.pch"
   s.prefix_header_contents = '#define DDLogInfo(...)', '#define DDLogVerbose(...)', '#define DDLogError(...)', '#define LOG_VERBOSE 0'
   s.exclude_files = "src/pixate-freestyleTests/*"
