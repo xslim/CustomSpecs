@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.source_files = 'src/*.{h,m,c}', 'src/{Core,Framework,Kernel,Modules}/**/*.{h,m,c}'
 #  s.prefix_header_file = "src/pixate-freestyle-Prefix.pch"
   s.prefix_header_contents = '#define DDLogInfo(...)', '#define DDLogVerbose(...)', '#define DDLogError(...)', '#define LOG_VERBOSE 0'
-  s.exclude_files = "src/pixate-freestyleTests/*"
+  s.exclude_files = "src/pixate-freestyleTests/*", 'src/Core/Lumberjack/*'
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics'
 end
