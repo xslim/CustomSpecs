@@ -18,6 +18,12 @@ Pod::Spec.new do |s|
     ui.dependency 'AFNetworking'
   end
 
+  s.subspec 'XTCoverFlow' do |ui|
+    ui.source_files  = 'Xaton-iOS/Classes/UI/XTCoverFlow.{h,m}'
+    ui.frameworks = 'QuartzCore', 'UIKit'
+    ui.requires_arc = true
+  end
+
   s.subspec 'Utils' do |utils|
     utils.source_files  = 'Xaton-iOS/Classes/Utils/**/*.{h,m}'
   end
