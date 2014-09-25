@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'Xaton-iOS'
-  s.version  = '1.2.13'
+  s.version  = '1.2.14'
   s.platform = :ios
   s.license = 'MIT'
   s.summary  = 'iOS lib with Xaton generic components'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors   = {
     'Xaton' => 'http://xaton.com'
   }
-  s.source   = { :git => 'git@github.com:Xaton/Xaton-iOS.git', :tag => '1.2.13' }
+  s.source   = { :git => 'git@github.com:Xaton/Xaton-iOS.git', :tag => '1.2.14' }
   s.requires_arc = false
 
 
